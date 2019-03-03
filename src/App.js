@@ -1,28 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import home from './Pages/home'
+import {Route,Switch} from 'react-router-dom';
+import team from "./Pages/FinalTeam";
+import contact from "./Pages/contact";
+import services from "./Pages/services"
+
+import "./app.css"
+
+
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        const App = () => (
+
+            <div>
+                <Switch>
+                    <Route exact={true} path={'/'} component={home}/>
+                    <Route exact={true} path={'/Home'} component={home}/>
+                    <Route exact={true} path={'/services'} component={services}/>
+                    <Route exact={true} path={'/OurTeam'} component={team}/>
+                    <Route exact={true} path={'/ContactUs'} component={contact}/>
+                </Switch>
+            </div>
+        );
+        return (
+            <Switch>
+                <App/>
+            </Switch>
+        );
+    }
 }
 
 export default App;

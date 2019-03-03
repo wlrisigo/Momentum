@@ -3,15 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "emailjs-com": "^2.3.2",
+    "faker": "^4.1.0",
+    "google-maps-react": "^2.0.2",
+    "prop-types": "latest",
     "react": "^16.7.0",
+    "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.7.0",
-    "react-scripts": "2.1.1"
+    "react-player": "^1.8.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.2",
+    "react-slideshow-image": "^1.0.10",
+    "semantic-ui-react": "^0.84.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "aws s3 sync build/ s3://chrisprib"
   },
   "eslintConfig": {
     "extends": "react-app"
