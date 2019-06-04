@@ -3,7 +3,7 @@
 import Team from '../Components/theTeam'
 import Nav from '../Components/navbar'
 import Footer from '../Components/Footer'
-import pic from '../Images/Header.png'
+import pic from '../Images/HomePage/SMALLMPW.png'
 import React from 'react';
 import {Container, Header, Image, Segment} from 'semantic-ui-react'
 import Map from '../Components/googleMap'

@@ -1,18 +1,18 @@
 import React from 'react'
-import MugShot from './imageCirc'
-import chris from '../Images/Team/Chris.jpg'
+import chris from '../Images/HomePage/Kid_Prib.jpg'
 import matt from '../Images/Team/Matthew.jpg'
 import adam from '../Images/Team/Adam.jpg'
 import josh from '../Images/Team/Josh.jpg'
 import Body from './team'
 import CardDeck from "react-bootstrap/CardDeck";
 import Card from "react-bootstrap/Card";
+import { List } from 'semantic-ui-react'
 
 
 
 const DividerExampleVertical = () => (
     <CardDeck>
-        <Card>
+        <Card fluid>
             <Card.Img variant="top" src={adam}/>
             <Card.Body>
                 <Card.Title>Adam Hanrahan</Card.Title>
@@ -29,7 +29,9 @@ const DividerExampleVertical = () => (
                 </Card.Text>
             </Card.Body>
             <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">
+                    <a href = "mailto: ahanrahan@momentumperformance.net"> E-Mail: ahanrahan@momentumperformance.net </a>
+                </small>
             </Card.Footer>
         </Card>
         <Card>
@@ -37,19 +39,47 @@ const DividerExampleVertical = () => (
             <Card.Body>
                 <Card.Title>Chris Pribish</Card.Title>
                 <Card.Text>
-                    Let’s take some time to match a face to our location. Chris Pribish L-ATC, CSCS, CSAC – Chris is
-                    the Director of United Medical Gym South Portland and Momentum Performance. Chris graduated from Canisius
-                    college with a Bachelor of Science in Sports Medicine in 2002 where he was an all-state collegiate rugby player. Chris has 8 years’
-                    experience working with Saco Bay Physical Therapy and has been doing personal training with United Medical Gym South Portland, formerly
-                    the M.O.G. since 2011. Chris is a Certified Strength and Conditioning Specialist, Certified Athletic Trainer, Certified Speed and Agility
-                    Coach and has completed further education including Z-Health Education Certification, Course work with Postural Restoration Institute and
-                    Facial Abrasion Technique and Functional Movement Screen. Chris was married in September of 2014 and has two wonderful kids. Chris’ hobbies
-                    include rooting for all New England sports and enjoying outdoor activities in his spare time.
+                    Chris Pribish L-ATC, CSCS, CSAC – Chris Graduated from Canisius college with a B.S. Sports Medicine/Athletic Training in 2002.
+                    In 2003 Chris became a Certified Athletic Trainer from through the Board of Certification. His background includes eight years
+                    of experience with Saco Bay Physical Therapy, managing and assisting in orthopedic rehabilitation. Chris began managing and operating
+                    the Medically Oriented Gym from 2011 to 2015 and developing an individualized, data driven approach to health and fitness.
+                    During which time he developed and managed multiple hospital employee wellness programs. In late 2015 Chris became majority
+                    owner of the M.O.G. LLC. and rebranded the business as the United Medical Gym South Portland. In Jan 2018 Chris also started
+                    Momentum Performance for sport specific training. He has trained athletes who have become State and National champions, State,
+                    National and World Record holders and currently is the full-time coach to American Professional Track and Field Champion Kate Hall.
+                    Chris has been a guest speaker on numerous health and performance topics nationally. He recently has contracted with The University
+                    of Georgia Track and Field team to perform evaluations with corrective exercise prescriptions prior to their first ever National
+                    Championship Season. Chris is a consultant and shareholder of the wearable technology company Kinaptics in which he is a
+                    co-inventor on multiple health related patients. Chris has completed additional course work and holds the following certifications:
+
+
+                    <List>
+                        <List.Item> </List.Item>
+                        <List.Item> </List.Item>
+                    </List>
+
+
+                    <List bulleted>
+
+                    <List.Item>Certified Athletic Trainer through NATA</List.Item>
+                    <List.Item>Certified Strength and Conditioning Specialist through NSCA </List.Item>
+                    <List.Item>Certified Speed and Agility Coach through Athletes Acceleration Strength and Conditioning</List.Item>
+                    <List.Item>Certified Functional Movement Screen</List.Item>
+                    <List.Item>Z Health Essentials</List.Item>
+                    <List.Item>Course Completion through The Postural Restoration Institution</List.Item>
+
+                    </List>
 
                 </Card.Text>
+
+
+
+
             </Card.Body>
             <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">
+                    <a href = "mailto: cpribish@momentummanie.com"> E-Mail: cpribish@MomentumMaine.com</a>
+                </small>
             </Card.Footer>
         </Card>
         <Card>
@@ -70,7 +100,9 @@ const DividerExampleVertical = () => (
                 </Card.Text>
             </Card.Body>
             <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+            <small className="text-muted">
+                <a href = "mailto: mmarcoux@momentumperformance.net"> E-Mail: mmarcoux@momentumperformance.net </a>
+            </small>
             </Card.Footer>
         </Card>
     </CardDeck>

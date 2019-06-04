@@ -1,12 +1,15 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
+import ThreePhotos from "../Components/GridLayout"
 import SlideShow from '../Components/Photo'
 import kid from '../Images/HomePage/Kid_Prib.jpg'
-import Vid from '../Components/video'
-import Kate from '../Images/HomePage/KateHall.jpg'
+
+import Slides from '../Components/SlideShow'
 import { Link } from 'react-router-dom'
-import logo from '../Images/HomePage/logo2.png'
+import logo from '../Images/HomePage/BIGMPW.png'
 import logo2 from '../Images/logoNav.png'
+import Footer from '../Components/Footer'
+
 import {
     Container,
     Grid,
@@ -24,23 +27,30 @@ import {
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
  * such things.
+ *
  */
+
+
+
 const HomepageHeading = ({ mobile }) => (
     <Container text>
 
-          <SlideShow photo={logo} />
 
-        <Header
-            as='h2'
-            content='A Smarter Way to Train'
-            inverted
-            style={{
-                fontSize: mobile ? '1.5em' : '1.7em',
-                fontWeight: 'normal',
-                marginTop: mobile ? '0.5em' : '1.5em',
-            }}
 
-        />
+        <SlideShow photo={logo} />
+
+
+        {/*<Header*/}
+            {/*as='h2'*/}
+            {/*content='A Smarter Way to Train'*/}
+            {/*inverted*/}
+            {/*style={{*/}
+                {/*fontSize: mobile ? '1.5em' : '1.7em',*/}
+                {/*fontWeight: 'normal',*/}
+                {/*marginTop: mobile ? '0.5em' : '1.5em',*/}
+            {/*}}*/}
+
+        {/*/>*/}
     </Container>
 )
 
@@ -73,10 +83,11 @@ class DesktopContainer extends Component {
                     onBottomPassedReverse={this.hideFixedMenu}
                 >
                     <Segment
-                        inverted
+
                         textAlign='center'
-                        style={{ minHeight: 700, padding: '1em 0em' }}
+                        style={{ minHeight: 350, padding: '1em 0em' }}
                         vertical
+                        inverted
                     >
                         <Menu
                             fixed={fixed ? 'top' : null}
@@ -144,23 +155,21 @@ class MobileContainer extends Component {
                     vertical
                     visible={sidebarOpened}
                 >
-                    <Menu.Item as='a' active>
-                        Home
-                    </Menu.Item>
                     <Menu.Item as={Link} to={'/Home'}>Home</Menu.Item>
                     <Menu.Item as={Link} to={'/Services'}>Services</Menu.Item>
                     <Menu.Item as={Link} to={'/OurTeam'}>Our Team</Menu.Item>
-                    <Menu.Item as={Link} to={'/Home'}>Contact Us</Menu.Item>
                 </Sidebar>
                 <Sidebar.Pusher dimmed={sidebarOpened}>
                     <Segment
-                        inverted
+                        // inverted
                         textAlign='center'
                         style={{ minHeight: 350, padding: '1em 0em' }}
                         vertical
                     >
                         <Container>
-                            <Menu inverted pointing secondary size='large'>
+                            <Menu
+                                // inverted
+                                pointing secondary size='large'>
                                 <Menu.Item onClick={this.handleToggle}>
                                     <Icon name='sidebar' />
                                 </Menu.Item>
@@ -200,85 +209,66 @@ const HomepageLayout = () => (
         <Segment style={{ padding: '8em 0em' }} vertical>
             <Grid container stackable verticalAlign='middle'>
                 <Grid.Row>
-                    <Grid.Column width={8}>
+                    <Grid.Column floated='left' width={6}>
                         <Header as='h3' style={{ fontSize: '2em' }}>
                             Mission Statement
                         </Header>
                         <p style={{ fontSize: '1.33em' }}>
-                            Momentum Performance – We are Maine’s foremost team of committed medical professional Athletic Trainers and Strength and Conditioning Coaches. Without exception, we bring research and science-based programming to train, educate, motivate and challenge our clients, so they can achieve optimal health, empowering them to maximize their performance, to reach and surpass their goals.
+                            Momentum Performance and Wellness – We are Maine’s foremost team of committed medical professional Athletic Trainers and Strength and Conditioning Coaches. Without exception, we bring research and science-based programming to train, educate, motivate and challenge our clients, so they can achieve optimal health, empowering them to maximize their performance, to reach and surpass their goals.
                         </p>
                         <Header as='h3' style={{ fontSize: '2em' }}>
                             Our Vision
                         </Header>
                         <p style={{ fontSize: '1.33em' }}>
-                            A scientific approach to wellness and performance. A smarter way to train.
+                            An individualized scientific approach to performance, rehabilitation and wellness. A smarter way to train and stay healthy.
                         </p>
                     </Grid.Column>
-                    <Grid.Column floated='right' width={6}>
-                        <Image bordered rounded size='large' src={kid} />
-                    </Grid.Column>
+                    <Grid.Column  color='black' floated='right'  width={8} style={{margin: '0em 0em 0em 5em'}}>
+
+                        <Slides/>
+                        <div  style={{margin: '-100px,0px,10em,0px'}}>
+                            <Image src={logo2} size='large' centered/>
+
+                        </div>
+                    </Grid.Column >
                 </Grid.Row>
                 <Grid.Row>
                 </Grid.Row>
             </Grid>
         </Segment>
-        <Segment style={{ padding: '0em' }} vertical>
-            <Grid celled='internally' columns='equal' stackable>
-                <Grid.Row textAlign='center'>
-                    <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-                        <Header as='h3' style={{ fontSize: '2em' }}>
-                            "Quote from someone"
-                        </Header>
-                        <p style={{ fontSize: '1.33em' }}>Known for</p>
-                    </Grid.Column>
-                    <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-                        <Header as='h3' style={{ fontSize: '2em' }}>
-                            "Quote From Someone."
-                        </Header>
-                        <p style={{ fontSize: '1.33em' }}>
-                            <Image avatar src={Kate} />
-                            <b>Kate Hall</b> Professional and National Division 1 Long-Jump Champion
-                        </p>
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
-        </Segment>
+        {/*FOR QUOTES*/}
+        {/*<Segment style={{ padding: '0em' }} vertical>*/}
+            {/*<Grid celled='internally' columns='equal' stackable>*/}
+                {/*<Grid.Row textAlign='center'>*/}
+                    {/*<Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>*/}
+                        {/*<Header as='h3' style={{ fontSize: '2em' }}>*/}
+                            {/*"Quote from someone"*/}
+                        {/*</Header>*/}
+                        {/*<p style={{ fontSize: '1.33em' }}>Known for</p>*/}
+                    {/*</Grid.Column>*/}
+                    {/*<Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>*/}
+                        {/*<Header as='h3' style={{ fontSize: '2em' }}>*/}
+                            {/*"Quote From Someone."*/}
+                        {/*</Header>*/}
+                        {/*<p style={{ fontSize: '1.33em' }}>*/}
+                            {/*<Image avatar src={Kate} />*/}
+                            {/*<b>Kate Hall</b> Professional and National Division 1 Long-Jump Champion*/}
+                        {/*</p>*/}
+                    {/*</Grid.Column>*/}
+                {/*</Grid.Row>*/}
+            {/*</Grid>*/}
+        {/*</Segment>*/}
+        <Responsive minWidth={Responsive.onlyTablet.minWidth}>
         <Segment style={{ padding: '8em 0em' }} vertical>
-            <div className='Record'> <Vid />
-            </div>
+
+
+            <ThreePhotos />
+
         </Segment>
-        <Segment inverted vertical style={{ padding: '5em 0em' }}>
-            <Container>
-                <Grid divided inverted stackable>
-                    <Grid.Row>
-                        <Grid.Column width={3}>
-                            <Image src={logo} size='medium' position="right"/>
-                        </Grid.Column>
-                        <Grid.Column width={3}>
-                            <Header inverted as='h4' content='About' />
-                            <List link inverted>
-                                <List.Item as={Link} to={'/home'}>Home</List.Item>
-                                <List.Item as={Link} to={'/services'}>Services</List.Item>
-                                <List.Item as={Link} to={'/contactus'}>Contact Us</List.Item>
-                            </List>
-                        </Grid.Column>
-                        <Grid.Column width={7}>
-                            <Header as='h4' inverted>
-                                Footer Header
-                            </Header>
-                            <p>
-                                Extra space for a call to action inside the footer that could help re-engage users.
-                            </p>
-                            <a href="https://www.google.com/maps/place/United+Medical+Gym+South+Portland/@43.6287719,-70.3315852,17z/data=!3m1!4b1!4m5!3m4!1s0x4cb29969a9cb1909:0xb07de11961c0e2c9!8m2!3d43.6287719!4d-70.3293965"> <Icon name={'location arrow'}/> 125 John Roberts Rd Suit 16
-                                South Portland, Maine 04106</a>
-                        </Grid.Column>
-                        <Grid.Column width={3}>
-                            <Image src={logo} size='medium' position="right"/>
-                        </Grid.Column>
-                    </Grid.Row>
-                </Grid>
-            </Container>
-        </Segment>
+        </Responsive>
+        <Footer/>
+
+
     </ResponsiveContainer>
 )
 export default HomepageLayout

@@ -112,7 +112,9 @@ h1.ui.header.H3 {
     margin-left: 17%;
 }
 .ui.huge.header.Service {
-    margin-left: 45%;
+    margin-left: 43%;
+    font-size: 53px;
+    font-family: "Helvetica";
 }
 
 img.ui.large.centered.image.Logo-Header {
@@ -145,3 +147,15 @@ h3.ui.header.H2 {
 .wrapper{
     width: 100%;
 }
+
+.ServicePics{
+    Height: 200px;
+}
+
+.show{
+    margin-left: 400px;
+}
+
+
+
+

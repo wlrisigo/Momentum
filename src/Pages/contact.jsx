@@ -1,8 +1,10 @@
+
 /* eslint-disable max-len */
 
-import Form from '../Components/contactForm'
 import Nav from '../Components/navbar'
 import Footer from "../Components/Footer";
+
+
 
 import React from 'react';
 import {Header, Container, Icon} from 'semantic-ui-react'
