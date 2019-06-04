@@ -16,7 +16,7 @@ const DividerExampleVertical = () => (
             <Card.Img variant="top" src={adam}/>
             <Card.Body>
                 <Card.Title>Adam Hanrahan</Card.Title>
-                <Card.Text>
+                <Card.Text style={{marginLeft:'100%', marginRight:'100%'}}>
                     Adam Hanrahan L-ATC, CSAC -Adam is the Manager of United Medical Gym
                     South Portland and Momentum Performance. Adam graduated from the University of Southern Maine with
                     a Bachelor of Science in Athletic Training in 2008. Adam has experience working in a physical

@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f4a6bb-ce80-4902-90cc-861eb1f96739" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Images/HomePage/SlideShow/BearHold.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/HomePage/SlideShow/LungePush.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/HomePage/SlideShow/Stir_The_Pot.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Serv.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Serv.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/contactForm.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/imageCirc.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/textDescription.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SlideShow.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/theTeam.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/theTeam.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/video.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/Record.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/FinalTeam.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/FinalTeam.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/contact.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/services.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/services.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,100 +17,77 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.56479806">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Pages/services.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="16" selection-start-line="14" selection-start-column="7" selection-end-line="18" selection-end-column="14" />
-                  <folding>
-                    <element signature="e#1#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Components/SlideShow.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="339">
-                  <caret line="37" column="80" selection-start-line="37" selection-start-column="80" selection-end-line="37" selection-end-column="80" />
-                  <folding>
-                    <element signature="e#0#42#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Components/theTeam.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-                  <folding>
-                    <element signature="e#0#25#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Components/navbar.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="363">
-                  <caret line="55" column="93" selection-start-line="55" selection-start-column="93" selection-end-line="55" selection-end-column="93" />
-                  <folding>
-                    <element signature="e#0#34#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Components/Serv.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="137">
-                  <caret line="70" column="46" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
-                  <folding>
-                    <element signature="e#0#25#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Pages/home.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1161">
-                  <caret line="114" column="47" selection-start-line="114" selection-start-column="44" selection-end-line="114" selection-end-column="47" />
-                  <folding>
-                    <element signature="e#0#34#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Components/Serv.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1048">
-                  <caret line="106" column="35" lean-forward="true" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="53" />
-                  <folding>
-                    <element signature="e#0#25#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Pages/services.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#1#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/SlideShow.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="37" column="80" selection-start-line="37" selection-start-column="80" selection-end-line="37" selection-end-column="80" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/theTeam.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/navbar.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="55" column="93" selection-start-line="55" selection-start-column="93" selection-end-line="55" selection-end-column="93" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Components/Serv.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Pages/home.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -213,21 +173,20 @@
         <option value="$PROJECT_DIR$/src/Pages/FinalTeam.jsx" />
         <option value="$PROJECT_DIR$/src/Components/Footer.jsx" />
         <option value="$PROJECT_DIR$/src/Components/video.jsx" />
-        <option value="$PROJECT_DIR$/src/Pages/services.jsx" />
         <option value="$PROJECT_DIR$/src/Pages/contact.jsx" />
         <option value="$PROJECT_DIR$/src/Pages/home.jsx" />
         <option value="$PROJECT_DIR$/src/app.css" />
         <option value="$PROJECT_DIR$/node_modules/react-animated-slider/build/horizontal.css" />
         <option value="$PROJECT_DIR$/src/Components/SlideShow.jsx" />
-        <option value="$PROJECT_DIR$/src/Components/theTeam.jsx" />
         <option value="$PROJECT_DIR$/src/Components/navbar.jsx" />
+        <option value="$PROJECT_DIR$/src/Components/theTeam.jsx" />
+        <option value="$PROJECT_DIR$/src/Pages/services.jsx" />
         <option value="$PROJECT_DIR$/src/Components/Serv.jsx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="846" />
-    <option name="width" value="834" />
+    <option name="width" value="479" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -259,6 +218,12 @@
               <item name="ChrisPrib" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChrisPrib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChrisPrib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ChrisPrib" type="b2602c69:ProjectViewProjectNode" />
@@ -348,12 +313,12 @@
       <workItem from="1554477924818" duration="412000" />
       <workItem from="1554478389204" duration="14000" />
       <workItem from="1555340371726" duration="6693000" />
-      <workItem from="1559060514812" duration="23322000" />
+      <workItem from="1559060514812" duration="26454000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111551000" />
+    <option name="totallyTimeSpent" value="114683000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -365,10 +330,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="0" y="0" width="1078" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.40204942" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28098392" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -382,7 +347,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32857144" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.28469387" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28469387" />
       <window_info anchor="bottom" id="File Transfer" order="11" weight="0.32941177" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -412,6 +377,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Components/Serv.jsx</url>
+          <line>159</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Images/HomePage/SMALLMPW.png">
@@ -632,10 +609,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Pages/home.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1161">
-          <caret line="114" column="47" selection-start-line="114" selection-start-column="44" selection-end-line="114" selection-end-column="47" />
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/theTeam.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -650,20 +634,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/theTeam.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Pages/services.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="16" selection-start-line="14" selection-start-column="7" selection-end-line="18" selection-end-column="14" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="e#1#39#0" expanded="true" />
           </folding>
@@ -672,7 +646,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/navbar.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
+        <state relative-caret-position="440">
           <caret line="55" column="93" selection-start-line="55" selection-start-column="93" selection-end-line="55" selection-end-column="93" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
@@ -682,8 +656,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Serv.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1048">
-          <caret line="106" column="35" lean-forward="true" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="53" />
+        <state relative-caret-position="134">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
