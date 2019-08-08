@@ -12,11 +12,11 @@ import {
     Segment,
     Sidebar,
     Visibility,
+    Dropdown
 } from 'semantic-ui-react'
 
 class DesktopContainer extends Component {
     state = {}
-
     hideFixedMenu = () => this.setState({ fixed: false })
     showFixedMenu = () => this.setState({ fixed: true })
     insta = () => this.setState(window.location='https://www.instagram.com/momentum.performance/?hl=en');
@@ -48,12 +48,16 @@ class DesktopContainer extends Component {
                         >
                             <Container>
                                 <Menu.Item className="pages">
-                                    <Image src={logo2} size='tiny' position='left'/>
+                                    <Menu.Item as={Link} to={'/Home'}> <Image src={logo2} size='tiny' position='left'/> </Menu.Item>
                                 </Menu.Item>
                                 <Menu.Item as={Link} to={'/Home'}>Home</Menu.Item>
                                 <Menu.Item as={Link} to={'/Services'}>Services</Menu.Item>
                                 <Menu.Item as={Link} to={'/OurTeam'}> Our Team</Menu.Item>
                                 <Menu.Item as={Link} to={'/contactus'}>Contact Us</Menu.Item>
+
+
+
+
                                 <Menu.Item position='right'>
                                     <div className="Social">
                                         <button onClick={this.face} className="ui facebook button">

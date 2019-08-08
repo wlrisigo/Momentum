@@ -223,14 +223,14 @@ const HomepageLayout = () => (
                             An individualized scientific approach to performance, rehabilitation and wellness. A smarter way to train and stay healthy.
                         </p>
                     </Grid.Column>
-                    <Grid.Column  color='black' floated='right'  width={8} style={{margin: '0em 0em 0em 5em'}}>
+                    <Grid.Column color='black' floated='right'  width={8} style={{margin: '0em 0em 0em 5em'}}>
 
                         <Slides/>
                         <div  style={{margin: '-100px,0px,10em,0px'}}>
-                            <Image src={logo2} size='large' centered/>
+                            <Image src={logo} size='large' centered/>
 
                         </div>
-                    </Grid.Column >
+                    </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
                 </Grid.Row>

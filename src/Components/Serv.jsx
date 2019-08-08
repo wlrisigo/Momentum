@@ -146,7 +146,7 @@ const DividerExampleVertical = () => (
                         </Card.Content>
                     </Card>
 
-                    <Card fluid color='blue'>
+                    <Card fluid color='teal'>
                         <Card.Content>
                             <Card.Header>Combine Testing</Card.Header>
                             <Card.Meta>Call for pricing and details</Card.Meta>
@@ -157,7 +157,7 @@ const DividerExampleVertical = () => (
                     </Card>
 
 
-                    <Card fluid color='blue'>
+                    <Card fluid color='black'>
                         <Card.Content>
                             <Card.Header>FMS- Functional Movement Screen</Card.Header>
                             <Card.Meta>$150</Card.Meta>
@@ -168,7 +168,7 @@ const DividerExampleVertical = () => (
                     </Card>
 
 
-                    <Card fluid color='blue'>
+                    <Card fluid color='green'>
                         <Card.Content>
                             <Card.Header>F.A.T. Tool:</Card.Header>
                             <Card.Meta>30 min session $45 or 60 min session $85</Card.Meta>
