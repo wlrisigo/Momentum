@@ -2,7 +2,7 @@ import Slider from 'react-animated-slider'
 import 'react-animated-slider/build/horizontal.css';
 
 import {Image} from 'semantic-ui-react'
-
+import logo from '../Images/HomePage/BIGMPW.png'
 
 import bearHold from '../Images/HomePage/SlideShow/BearHold.jpg'
 import katePro from '../Images/HomePage/SlideShow/KateProPic.jpeg'
@@ -18,7 +18,7 @@ const Slides = () => {
     const content = [
         {
             image: katePro,
-            title: "Hello"
+            title: "Performance"
         },
         {
             image: lungePush,
@@ -43,6 +43,8 @@ const Slides = () => {
 
                     <Image src={item.image} fluid={true} centered  />
                 </div>
+
+
 
 
             )}

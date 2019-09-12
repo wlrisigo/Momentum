@@ -6,7 +6,7 @@ import josh from '../Images/Team/Josh.jpg'
 import Body from './team'
 import CardDeck from "react-bootstrap/CardDeck";
 import Card from "react-bootstrap/Card";
-import { List } from 'semantic-ui-react'
+import { List, Modal } from 'semantic-ui-react'
 
 
 

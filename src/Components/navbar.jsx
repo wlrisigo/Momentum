@@ -48,27 +48,25 @@ class DesktopContainer extends Component {
                         >
                             <Container>
                                 <Menu.Item className="pages">
-                                    <Menu.Item as={Link} to={'/Home'}> <Image src={logo2} size='tiny' position='left'/> </Menu.Item>
+                                    <Menu.Item as={Link} to={'/Home'}> <Image src={logo2} size='tiny' style={{marginBottom:"-18px"}}/> </Menu.Item>
                                 </Menu.Item>
-                                <Menu.Item as={Link} to={'/Home'}>Home</Menu.Item>
+                                <Menu.Item as={Link} to={'/'}>Home</Menu.Item>
                                 <Menu.Item as={Link} to={'/Services'}>Services</Menu.Item>
                                 <Menu.Item as={Link} to={'/OurTeam'}> Our Team</Menu.Item>
                                 <Menu.Item as={Link} to={'/contactus'}>Contact Us</Menu.Item>
 
 
 
-
                                 <Menu.Item position='right'>
-                                    <div className="Social">
-                                        <button onClick={this.face} className="ui facebook button">
-                                            <i className="facebook icon"></i>
-                                            Facebook
-                                        </button>
-                                        <button onClick={this.insta} className="ui instagram button">
-                                            <i className="instagram icon"></i>
-                                            Instagram
-                                        </button>
-                                    </div>
+                                    <button onClick={this.face} className="ui facebook button" style={{marginRight:"5px"}}>
+                                        <i className="facebook icon"></i>
+                                        Facebook
+                                    </button>
+
+                                    <button onClick={this.insta} className="ui instagram button">
+                                        <i className="instagram icon"></i>
+                                        Instagram
+                                    </button>
                                 </Menu.Item>
                             </Container>
                         </Menu>
@@ -89,6 +87,8 @@ class MobileContainer extends Component {
     state = {}
 
     handleSidebarHide = () => this.setState({ sidebarOpened: false })
+    insta = () => this.setState(window.location='https://www.instagram.com/momentum.performance/?hl=en');
+    face = () => this.setState(window.location='https://www.facebook.com/MomentumMaine/?epa=SEARCH_BOX');
 
     handleToggle = () => this.setState({ sidebarOpened: true })
 
@@ -122,8 +122,8 @@ class MobileContainer extends Component {
                                     <Icon name='sidebar' />
                                 </Menu.Item>
                                 <Menu.Item position='right'>
-                                    <i className="facebook icon"></i>
-                                    <i className="instagram icon"></i>
+                                    <i onClick={this.face} className="facebook icon" ></i>
+                                    <i onClick={this.insta} className="instagram icon"></i>
                                 </Menu.Item>
                             </Menu>
                         </Container>

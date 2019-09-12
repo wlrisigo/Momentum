@@ -4,8 +4,9 @@
 }
 
 .Social{
-    margin-right: -65%;
+
     margin-left: 65%;
+
 }
 .Record{
     width: 1000px;
@@ -107,10 +108,10 @@ h1.ui.header.H3 {
     margin-left: 31%;
 }
 
-.ui.inverted.header {
-    color: #fff;
-    margin-left: 17%;
-}
+/*.ui.inverted.header {*/
+    /*color: #fff;*/
+    /*margin-left: 17%;*/
+/*}*/
 .ui.huge.header.Service {
     margin-left: 43%;
     font-size: 53px;
@@ -158,6 +159,13 @@ h3.ui.header.H2 {
 
 .description{
     width: 100%;
+}
+
+.card-img-top {
+    width: 75%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    margin: auto;
 }
 
 

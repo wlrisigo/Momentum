@@ -33,22 +33,24 @@ import {
 
 
 const HomepageHeading = ({ mobile }) => (
-    <Container text>
+    <Container>
 
 
-
+        <div style={{
+            marginTop: mobile ? '4.5em' : '1.5em'
+        }}>
         <SlideShow photo={logo} />
-
+        </div>
 
         {/*<Header*/}
-            {/*as='h2'*/}
-            {/*content='A Smarter Way to Train'*/}
-            {/*inverted*/}
-            {/*style={{*/}
-                {/*fontSize: mobile ? '1.5em' : '1.7em',*/}
-                {/*fontWeight: 'normal',*/}
-                {/*marginTop: mobile ? '0.5em' : '1.5em',*/}
-            {/*}}*/}
+        {/*as='h2'*/}
+        {/*content='A Smarter Way to Train'*/}
+        {/*inverted*/}
+        {/*style={{*/}
+        {/*fontSize: mobile ? '1.5em' : '1.7em',*/}
+        {/*fontWeight: 'normal',*/}
+        {/*marginTop: mobile ? '0.5em' : '1.5em',*/}
+        {/*}}*/}
 
         {/*/>*/}
     </Container>
@@ -106,18 +108,22 @@ class DesktopContainer extends Component {
                                 <Menu.Item as={Link} to={'/Services'}>Services</Menu.Item>
                                 <Menu.Item as={Link} to={'/OurTeam'}> Our Team</Menu.Item>
                                 <Menu.Item as={Link} to={'/ContactUs'}>Contact Us</Menu.Item>
-                                <Menu.Item position='right'>
-                                    <div className="Social">
-                                    <button onClick={this.face} className="ui facebook button">
-                                        <i className="facebook icon"></i>
-                                        Facebook
-                                    </button>
-                                    <button onClick={this.insta} className="ui instagram button">
-                                        <i className="instagram icon"></i>
-                                        Instagram
-                                    </button>
-                                        </div>
-                                </Menu.Item>
+
+
+
+                                        <Menu.Item position='right'>
+                                        <button onClick={this.face} className="ui facebook button" style={{marginRight:"5px"}}>
+                                            <i className="facebook icon"></i>
+                                            Facebook
+                                        </button>
+
+                                        <button onClick={this.insta} className="ui instagram button">
+                                            <i className="instagram icon"></i>
+                                            Instagram
+                                        </button>
+                                        </Menu.Item>
+
+
                             </Container>
                         </Menu>
                         <HomepageHeading />
@@ -140,6 +146,10 @@ class MobileContainer extends Component {
     handleSidebarHide = () => this.setState({ sidebarOpened: false })
 
     handleToggle = () => this.setState({ sidebarOpened: true })
+
+    insta = () => this.setState(window.location='https://www.instagram.com/momentum.performance/?hl=en');
+    face = () => this.setState(window.location='https://www.facebook.com/MomentumMaine/?epa=SEARCH_BOX');
+
 
     render() {
         const { children } = this.props
@@ -174,8 +184,8 @@ class MobileContainer extends Component {
                                     <Icon name='sidebar' />
                                 </Menu.Item>
                                 <Menu.Item position='right'>
-                                        <i className="facebook icon"></i>
-                                        <i className="instagram icon"></i>
+                                    <i onClick={this.face} className="facebook icon" ></i>
+                                    <i onClick={this.insta} className="instagram icon"></i>
                                 </Menu.Item>
                             </Menu>
                         </Container>
@@ -223,13 +233,17 @@ const HomepageLayout = () => (
                             An individualized scientific approach to performance, rehabilitation and wellness. A smarter way to train and stay healthy.
                         </p>
                     </Grid.Column>
-                    <Grid.Column color='black' floated='right'  width={8} style={{margin: '0em 0em 0em 5em'}}>
+                    <Grid.Column color='black' floated='right'  width={8} >
+
+                        <div>
+                            <Image src={logo} size='large' centered style={{
+                                paddingBottom: '2em',
+                                paddingTop: '3em'
+                            }}/>
+                        </div>
 
                         <Slides/>
-                        <div  style={{margin: '-100px,0px,10em,0px'}}>
-                            <Image src={logo} size='large' centered/>
 
-                        </div>
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
@@ -238,33 +252,33 @@ const HomepageLayout = () => (
         </Segment>
         {/*FOR QUOTES*/}
         {/*<Segment style={{ padding: '0em' }} vertical>*/}
-            {/*<Grid celled='internally' columns='equal' stackable>*/}
-                {/*<Grid.Row textAlign='center'>*/}
-                    {/*<Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>*/}
-                        {/*<Header as='h3' style={{ fontSize: '2em' }}>*/}
-                            {/*"Quote from someone"*/}
-                        {/*</Header>*/}
-                        {/*<p style={{ fontSize: '1.33em' }}>Known for</p>*/}
-                    {/*</Grid.Column>*/}
-                    {/*<Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>*/}
-                        {/*<Header as='h3' style={{ fontSize: '2em' }}>*/}
-                            {/*"Quote From Someone."*/}
-                        {/*</Header>*/}
-                        {/*<p style={{ fontSize: '1.33em' }}>*/}
-                            {/*<Image avatar src={Kate} />*/}
-                            {/*<b>Kate Hall</b> Professional and National Division 1 Long-Jump Champion*/}
-                        {/*</p>*/}
-                    {/*</Grid.Column>*/}
-                {/*</Grid.Row>*/}
-            {/*</Grid>*/}
+        {/*<Grid celled='internally' columns='equal' stackable>*/}
+        {/*<Grid.Row textAlign='center'>*/}
+        {/*<Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>*/}
+        {/*<Header as='h3' style={{ fontSize: '2em' }}>*/}
+        {/*"Quote from someone"*/}
+        {/*</Header>*/}
+        {/*<p style={{ fontSize: '1.33em' }}>Known for</p>*/}
+        {/*</Grid.Column>*/}
+        {/*<Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>*/}
+        {/*<Header as='h3' style={{ fontSize: '2em' }}>*/}
+        {/*"Quote From Someone."*/}
+        {/*</Header>*/}
+        {/*<p style={{ fontSize: '1.33em' }}>*/}
+        {/*<Image avatar src={Kate} />*/}
+        {/*<b>Kate Hall</b> Professional and National Division 1 Long-Jump Champion*/}
+        {/*</p>*/}
+        {/*</Grid.Column>*/}
+        {/*</Grid.Row>*/}
+        {/*</Grid>*/}
         {/*</Segment>*/}
         <Responsive minWidth={Responsive.onlyTablet.minWidth}>
-        <Segment style={{ padding: '8em 0em' }} vertical>
+            <Segment style={{ padding: '8em 0em' }} vertical>
 
 
-            <ThreePhotos />
+                <ThreePhotos />
 
-        </Segment>
+            </Segment>
         </Responsive>
         <Footer/>
 
